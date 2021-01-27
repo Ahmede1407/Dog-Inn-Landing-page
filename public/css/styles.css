@@ -1,0 +1,91 @@
+/* Basics */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 5000px; /*------------------------------------------- just for testing-------------------------------------------*/
+  font-family: "Roboto", sans-serif;
+}
+
+.hightlight {
+  font-weight: 700;
+  color: #ee5253;
+}
+
+/* .btn.btn-outline-dark {
+  width: 150px;
+  border-radius: 0;
+}
+button {
+  transition: background-color 1s ease-out !important;
+} */
+
+.animated {
+  opacity: 0;
+  transition: all 1s;
+  -o-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+/* ------------------------------ */
+/* Navbar */
+.social-media {
+  font-size: 1.2rem;
+  margin-left: auto;
+}
+.social-media a {
+  color: #000;
+}
+.social-media a:hover {
+  color: #0056b3;
+}
+
+/* Video Desplay */
+.video-container {
+  position: relative;
+  min-width: 100%;
+  height: 70vh;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#video {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.video-overlay {
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: -1;
+}
+.video-content {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10rem;
+  margin-left: 5rem;
+  color: #fff;
+  z-index: 2;
+}
+.video-content h1 {
+  font-size: 3.125rem;
+}
