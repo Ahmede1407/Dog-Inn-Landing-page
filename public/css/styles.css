@@ -292,3 +292,105 @@ button {
   background: #555;
   box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+/* -- Gallery --  */
+.gallery {
+  position: relative;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.thumbnail {
+  margin: 3rem;
+}
+.gallery .btn {
+  width: auto;
+  padding: 10px 30px;
+  font-size: 1rem;
+}
+
+/* -- Contact Us -- */
+:root {
+  --success: #2ecc71;
+  --error: #e74c3c;
+}
+
+.contact {
+  box-shadow: 0 0 20px rgba(72, 94, 116, 0.7);
+  padding-top: 3rem;
+  margin-bottom: 5rem;
+}
+.contact h2 {
+  margin-top: 2rem;
+}
+.contact ul {
+  list-style: none;
+  padding: 0 3rem;
+  text-align: center;
+}
+.contact li {
+  font-size: 1.2rem;
+}
+.contact-info img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.alert {
+  text-align: center;
+  background-color: #79c879;
+  color: #fff;
+  display: none;
+}
+.contact label {
+  display: block;
+  margin: 0;
+}
+.contact form {
+  padding: 1rem 3rem 3rem 3rem;
+}
+.contact input:focus {
+  outline-color: #333;
+}
+.form-group small,
+.exc {
+  color: var(--error);
+  display: none;
+}
+
+/* error message */
+.form-group.error input,
+.form-group.error textarea {
+  border-color: var(--error);
+}
+
+.form-group.error small,
+.form-group.error .exc {
+  display: inline;
+}
+
+/* success message */
+.form-group.success input,
+.form-group.success textarea {
+  border-color: var(--success);
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+}
+.form-group label,
+.contact li {
+  font-family: "Open Sans", sans-serif;
+}
+
+.contact-form h2 {
+  display: none;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+}
