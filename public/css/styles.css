@@ -101,7 +101,7 @@ button {
 
 /* --Show Case-- */
 .showcase {
-  margin: 6rem;
+  margin: 6rem auto;
 }
 
 .showcase1 {
@@ -109,7 +109,7 @@ button {
 }
 
 .showcase1 .showcase-text {
-  margin-right: 2rem;
+  margin-right: 5rem;
   position: relative;
 }
 .showcase-text p {
@@ -121,7 +121,7 @@ button {
 }
 
 .showcase2 .showcase-text {
-  margin-left: 2rem;
+  margin-left: 5rem;
   position: relative;
 }
 
@@ -459,6 +459,10 @@ button {
     width: 100%;
   }
 
+  .showcase1 .showcase-text,
+  .showcase2 .showcase-text {
+    margin: 0 auto;
+  }
   .showcase img {
     max-width: 100%;
   }
@@ -510,7 +514,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 768px) {
   .service-content p {
     height: auto;
   }
@@ -524,6 +528,9 @@ button {
     width: 100%;
     object-fit: cover;
   }
+  .footer-bottom span {
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 540px) {
@@ -532,8 +539,13 @@ button {
     padding-left: 0 !important;
   }
 
+  .footer-top img {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+
   .footer-links {
-    display: flex;
+    display: inline-block;
   }
 
   .footer-links:nth-child(2) {
